@@ -44,11 +44,7 @@
 // Start of cover pages
 #set align(center)
 
-#v(1cm)
-
-#image("TU_Dublin_Logo.png", width: 40%) // Download logo seperately
-
-#v(1cm)
+#image("TUDublin_Colour_RGB.svg", width: 70%) // Download logo seperately
 
 TU721 - #courseyear\
 B. Eng Tech. Aviation Technology\

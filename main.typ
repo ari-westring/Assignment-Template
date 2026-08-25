@@ -32,10 +32,10 @@
   )
 )
 
-
-
-
 #set align(center)
+
+#v(1cm)
+
 #image("TU_Dublin_Logo.png", width: 40%)
 
 #v(1cm)
@@ -71,4 +71,28 @@ Signed: #name Date: #date
 
 #pagebreak()
 
-#lorem(300)
+#counter(page).update(1)
+#set page(
+  numbering: "i.",
+  number-align: center,
+)
+
+#outline()
+
+#pagebreak()
+
+#counter(page).update(1)
+#set page(
+  numbering: "1",
+  number-align: right,
+)
+
+#lorem(500)
+
+This is a citation @voynovTypstModernTypesetting2026a
+
+#pagebreak()
+#bibliography(
+  "library.bib",
+  style: "harvard-cite-them-right"
+)

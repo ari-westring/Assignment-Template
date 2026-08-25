@@ -87,9 +87,20 @@ Signed: #name Date: #date
   number-align: right,
 )
 
-#lorem(500)
+#show heading : set block(below: 1em, above: 2em, )
+#set heading(
+  numbering: "1-1.  ",
+)
 
+= First Heading
+#lorem(200)
 This is a citation @voynovTypstModernTypesetting2026a
+
+== Sub Heading
+#lorem(100)
+
+= Second Heading
+#lorem(300)
 
 #pagebreak()
 #bibliography(

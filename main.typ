@@ -46,7 +46,7 @@
 
 #v(1cm)
 
-#image("TU_Dublin_Logo.png", width: 40%)
+#image("TU_Dublin_Logo.png", width: 40%) // Download logo seperately
 
 #v(1cm)
 

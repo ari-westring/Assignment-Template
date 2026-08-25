@@ -11,15 +11,24 @@
 #let date = [SUBMISSION DATE]
 #let count = [WORDCOUNT]
 
+// Font settings
 #set text(
   size: (12pt),
 )
 
+// Line spacing
 #set par(leading: 1.5em)
 #set par(spacing: 3em)
 
 #set page(margin: auto)
 
+// Heading style
+#show heading : set block(below: 1em, above: 2em, )
+#set heading(
+  numbering: "1-1.  ",
+)
+
+// Header
 #set page(
   margin: (top: 7em, ),
   header-ascent: (4em),
@@ -32,6 +41,7 @@
   )
 )
 
+// Start of cover pages
 #set align(center)
 
 #v(1cm)
@@ -80,18 +90,16 @@ Signed: #name Date: #date
 #outline()
 
 #pagebreak()
+// End of cover page
 
+// Page number footer
 #counter(page).update(1)
 #set page(
   numbering: "1",
   number-align: right,
 )
 
-#show heading : set block(below: 1em, above: 2em, )
-#set heading(
-  numbering: "1-1.  ",
-)
-
+// Start of examples
 = First Heading
 #lorem(200)
 This is a citation @voynovTypstModernTypesetting2026a
@@ -101,7 +109,9 @@ This is a citation @voynovTypstModernTypesetting2026a
 
 = Second Heading
 #lorem(300)
+// End of examples
 
+// Bibliography
 #pagebreak()
 #bibliography(
   "library.bib",
